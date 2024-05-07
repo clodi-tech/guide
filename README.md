@@ -1,28 +1,26 @@
-# README
+# Roadmap
 
-## Overview
-
-### 1. Deploy Application
+## Deploy Application
 
 - [x] Git Repository
 - [ ] Connect to GitHub
 - [ ] Deploy to Vercel
 
-### 2. Design
+## Design
 
 - [ ] Add UI library
 
-### 3. Authentication
+## Authentication
 
 - [ ] Add Auth.js
 - [ ] Add Providers
 
-### 4. Database
+## Database
 
 - [ ] Neon setup
 - [ ] Drizzle ORM setup
 
-### 5. Payment
+## Payment
 
 - [ ] Stripe setup
 - [ ] Create Product/Subscription
