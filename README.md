@@ -20,7 +20,7 @@
 - [x] Add Auth.js
 - [x] Add Providers
 - [x] Sign in/out button
-- [ ] Protected routes
+- [x] Protected routes
 
 ## Database
 
