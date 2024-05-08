@@ -11,7 +11,7 @@
 ## Design
 
 - [x] Clean up
-- [ ] Add UI library
+- [x] Add UI library
 - [ ] Font
 - [ ] Logo
 
