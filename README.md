@@ -12,8 +12,8 @@
 
 - [x] Clean up
 - [x] Add UI library
-- [ ] Font
-- [ ] Logo
+- [x] Font
+- [x] Logo
 
 ## Authentication
 
