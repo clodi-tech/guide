@@ -3,7 +3,8 @@
 ## Deploy Application
 
 - [x] Git Repository
-- [ ] Connect to GitHub
+- [x] Connect to GitHub
+- [x] Create Next App
 - [ ] Deploy to Vercel
 
 ## Design
