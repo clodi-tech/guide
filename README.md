@@ -18,7 +18,7 @@
 ## Authentication
 
 - [x] Add Auth.js
-- [ ] Add Providers
+- [x] Add Providers
 - [ ] Sign in/out button
 - [ ] Protected routes
 
