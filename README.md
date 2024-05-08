@@ -17,13 +17,16 @@
 
 ## Authentication
 
-- [ ] Add Auth.js
+- [x] Add Auth.js
 - [ ] Add Providers
+- [ ] Sign in/out button
+- [ ] Protected routes
 
 ## Database
 
 - [ ] Neon setup
 - [ ] Drizzle ORM setup
+- [ ] Auth adapter
 
 ## Payment
 
