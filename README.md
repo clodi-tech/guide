@@ -10,9 +10,10 @@
 
 ## Design
 
-- [ ] Clean up
-- [ ] Font
+- [x] Clean up
 - [ ] Add UI library
+- [ ] Font
+- [ ] Logo
 
 ## Authentication
 
