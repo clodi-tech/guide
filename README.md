@@ -5,10 +5,13 @@
 - [x] Git Repository
 - [x] Connect to GitHub
 - [x] Create Next App
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
+- [x] Analytics
 
 ## Design
 
+- [ ] Clean up
+- [ ] Font
 - [ ] Add UI library
 
 ## Authentication
