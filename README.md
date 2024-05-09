@@ -35,5 +35,5 @@
 
 - [x] Stripe setup
 - [x] Create Product/Subscription
-- [ ] Checkout
-- [ ] Webhooks
+- [x] Checkout
+- [x] Webhooks
