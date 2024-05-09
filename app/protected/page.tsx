@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import CheckoutButton from "../ui/checkout";
 
 export default async function Page() {
   const session = await auth();
@@ -14,6 +15,7 @@ export default async function Page() {
       <p>
         This page is protected. You can only see this page if you are signed in.
       </p>
+      <CheckoutButton />
     </div>
   );
 }
