@@ -33,7 +33,7 @@
 
 ## Payment
 
-- [ ] Stripe setup
-- [ ] Create Product/Subscription
+- [x] Stripe setup
+- [x] Create Product/Subscription
 - [ ] Checkout
 - [ ] Webhooks
