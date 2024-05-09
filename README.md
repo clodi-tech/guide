@@ -24,7 +24,7 @@
 
 ## Database
 
-- [ ] Neon setup
+- [x] Neon setup
 - [ ] Drizzle ORM setup
 - [ ] Auth adapter
 
