@@ -28,8 +28,8 @@
 - [x] Drizzle ORM setup
 - [x] Drizzle scripts
 - [x] Define schema
-- [ ] Auth adapter
-- [ ] Run migrations
+- [x] Auth adapter
+- [x] Run migrations
 
 ## Payment
 
