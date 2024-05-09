@@ -11,6 +11,7 @@
     "migrate": "drizzle-kit push:pg"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.0.1",
     "@neondatabase/serverless": "^0.9.1",
     "@vercel/analytics": "^1.2.2",
     "drizzle-orm": "^0.30.10",

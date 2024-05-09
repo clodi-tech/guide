@@ -27,8 +27,8 @@
 - [x] Neon setup
 - [x] Drizzle ORM setup
 - [x] Drizzle scripts
-- [ ] Auth adapter
 - [ ] Define schema
+- [ ] Auth adapter
 - [ ] Run migrations
 
 ## Payment
