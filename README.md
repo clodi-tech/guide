@@ -25,7 +25,8 @@
 ## Database
 
 - [x] Neon setup
-- [ ] Drizzle ORM setup
+- [x] Drizzle ORM setup
+- [x] Drizzle scripts
 - [ ] Auth adapter
 
 ## Payment
