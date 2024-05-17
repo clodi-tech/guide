@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SignInButton } from "@/components/signin";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +14,9 @@ export default function Home() {
         />
       </div>
       <h1>Landing page</h1>
-      <SignInButton />
+      <Link href="/protect">
+        <button className="btn btn-primary">launch app</button>
+      </Link>
     </main>
   );
 }
