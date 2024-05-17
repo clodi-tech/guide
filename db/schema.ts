@@ -5,13 +5,7 @@ import {
   primaryKey,
   integer,
 } from "drizzle-orm/pg-core";
-import { neon } from "@neondatabase/serverless";
-import { drizzle } from "drizzle-orm/neon-http";
-import type { AdapterAccount } from "next-auth/adapters";
-
-const connectionString = process.env.AUTH_DRIZZLE_URL!;
-const pool = neon(connectionString);
-export const db = drizzle(pool);
+import type { AdapterAccountType } from "next-auth/adapters";
 
 export const users = pgTable("user", {
   id: text("id")
@@ -29,7 +23,7 @@ export const accounts = pgTable(
     userId: text("userId")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
-    type: text("type").$type<AdapterAccount["type"]>().notNull(),
+    type: text("type").$type<AdapterAccountType>().notNull(),
     provider: text("provider").notNull(),
     providerAccountId: text("providerAccountId").notNull(),
     refresh_token: text("refresh_token"),
@@ -44,7 +38,7 @@ export const accounts = pgTable(
     compoundKey: primaryKey({
       columns: [account.provider, account.providerAccountId],
     }),
-  }),
+  })
 );
 
 export const sessions = pgTable("session", {
@@ -64,5 +58,5 @@ export const verificationTokens = pgTable(
   },
   (vt) => ({
     compoundKey: primaryKey({ columns: [vt.identifier, vt.token] }),
-  }),
+  })
 );

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
-
 import { Analytics } from "@vercel/analytics/react";
 
 const font = Rajdhani({
@@ -11,7 +10,7 @@ const font = Rajdhani({
 
 export const metadata: Metadata = {
   title: "Guide",
-  description: "How to create a SaaS easy and fast",
+  description: "Deploy full stack application with ease",
 };
 
 export default function RootLayout({

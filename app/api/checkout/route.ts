@@ -1,11 +1,9 @@
 import { NextResponse } from "next/server";
-import Stripe from "stripe";
+import { stripe } from "@/utils/stripe";
 
 export async function POST(request: Request) {
   try {
     const { priceId, email, userId } = await request.json();
-
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
     const session = await stripe.checkout.sessions.create({
       metadata: {
@@ -16,13 +14,10 @@ export async function POST(request: Request) {
       line_items: [
         {
           price: priceId,
-        },
-        {
-          price: "price_1OtHdOBF7AptWZlcPmLotZgW",
           quantity: 1,
         },
       ],
-      mode: "subscription",
+      mode: "payment",
       success_url: `${request.headers.get("origin")}/success`,
       cancel_url: `${request.headers.get("origin")}/cancel`,
     });

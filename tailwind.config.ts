@@ -8,10 +8,9 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
   plugins: [tailwindTypography, daisyui],
   daisyui: {
-    themes: ["dim"],
+    themes: ["forest"],
   },
 };
 export default config;

@@ -1,10 +1,11 @@
 import NextAuth from "next-auth";
-import Google from "next-auth/providers/google";
-import GitHub from "next-auth/providers/github";
+import google from "next-auth/providers/google";
+import github from "next-auth/providers/github";
+import resend from "next-auth/providers/resend";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import { db } from "@/db/schema";
+import { db } from "@/utils/neon";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: DrizzleAdapter(db),
-  providers: [Google, GitHub],
+  providers: [google, github, resend],
 });

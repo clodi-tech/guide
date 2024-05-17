@@ -1,12 +1,12 @@
 {
-  "version": "5",
-  "dialect": "pg",
+  "version": "6",
+  "dialect": "postgresql",
   "entries": [
     {
       "idx": 0,
-      "version": "5",
-      "when": 1715256672281,
-      "tag": "0000_workable_virginia_dare",
+      "version": "6",
+      "when": 1715952469824,
+      "tag": "0000_unknown_richard_fisk",
       "breakpoints": true
     }
   ]
