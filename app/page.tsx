@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SignInButton } from "@/components/signin";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-      <p>setup logo</p>
+      <h1>Landing page</h1>
+      <SignInButton />
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindTypography from "@tailwindcss/typography";
 import daisyui from "daisyui";
 
 const config: Config = {
@@ -7,7 +8,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("@tailwindcss/typography"), daisyui],
+  plugins: [tailwindTypography, daisyui],
   daisyui: {
     themes: ["forest"],
   },
