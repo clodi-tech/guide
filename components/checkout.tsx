@@ -2,10 +2,10 @@
 
 import { loadStripe } from "@stripe/stripe-js";
 
-export default function CheckoutButton() {
+export default function CheckoutButton({ session }: { session: any }) {
   const handleCheckout = async () => {
-    const userId = "4ce39715-ba0f-4211-a6a4-eb4b3a142129";
-    const userEmail = "ciao@clodi.tech";
+    const userId = session.user.id;
+    const userEmail = session.user.email;
 
     const stripePromise = loadStripe(
       process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
@@ -22,8 +22,8 @@ export default function CheckoutButton() {
         email: userEmail,
       }),
     });
-    const session = await response.json();
-    await stripe?.redirectToCheckout({ sessionId: session.id });
+    const checkout = await response.json();
+    await stripe?.redirectToCheckout({ sessionId: checkout.id });
   };
 
   return (

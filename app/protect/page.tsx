@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <div>
       <p>Welcome, {session.user.name}</p>
-      <CheckoutButton />
+      <CheckoutButton session={session} />
       <SignOut />
     </div>
   );
