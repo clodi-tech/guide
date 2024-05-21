@@ -19,18 +19,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ message: "Webhook Error" }, { status: 400 });
     }
 
+    console.log(`Received event: ${event.type}`);
+
     if (event.type === "checkout.session.completed") {
       const session: Stripe.Checkout.Session = event.data.object;
-      console.log(session);
       const userId = session.metadata?.user_id;
+      console.log(`User ID: ${userId}`);
 
       // business logic here
-    }
-
-    if (event.type === "customer.subscription.updated") {
-    }
-
-    if (event.type === "customer.subscription.deleted") {
     }
 
     return NextResponse.json({ message: "success" });
