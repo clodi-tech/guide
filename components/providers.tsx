@@ -1,4 +1,4 @@
-import { signIn } from "@/auth";
+import { signIn, signOut } from "@/auth";
 
 export function SignInGoogle() {
   return (
@@ -41,6 +41,21 @@ export function SignInMagic() {
       <input type="text" name="email" placeholder="Email" className="input" />
       <button type="submit" className="btn btn-neutral">
         Signin with Email
+      </button>
+    </form>
+  );
+}
+
+export function SignOut() {
+  return (
+    <form
+      action={async () => {
+        "use server";
+        await signOut();
+      }}
+    >
+      <button type="submit" className="btn btn-neutral">
+        Sign Out
       </button>
     </form>
   );

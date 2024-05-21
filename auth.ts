@@ -7,5 +7,12 @@ import { db } from "@/utils/neon";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: DrizzleAdapter(db),
-  providers: [google, github, resend],
+  providers: [
+    google,
+    github,
+    resend({
+      apiKey: process.env.AUTH_RESEND_KEY,
+      from: process.env.AUTH_RESEND_FROM,
+    }),
+  ],
 });

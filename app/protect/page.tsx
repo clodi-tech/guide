@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import CheckoutButton from "@/components/checkout";
+import { SignOut } from "@/components/providers";
 import { SignInButton } from "@/components/signin";
 
 export default async function Page() {
@@ -16,6 +17,7 @@ export default async function Page() {
     <div>
       <p>Welcome, {session.user.name}</p>
       <CheckoutButton />
+      <SignOut />
     </div>
   );
 }
